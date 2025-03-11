@@ -19,11 +19,23 @@ header {
 header h1 {
     margin: 0;
     font-size: 2.5em;
+    animation: slide-in 1s ease-out; /* Slide animation */
 }
 
 header p {
     margin: 5px 0 0;
     font-size: 1.2em;
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateX(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 nav ul {
@@ -45,10 +57,12 @@ nav ul li a {
     text-decoration: none;
     padding: 15px 20px;
     display: inline-block;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
     background: #0033cc; /* Darker blue for hover effect */
+    transform: scale(1.1);
     border-radius: 5px;
 }
 
@@ -75,11 +89,18 @@ section#products .product {
     padding: 10px;
     border-radius: 5px;
     background: #f9fbff; /* Light background for each product */
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section#products .product:hover {
+    transform: translateY(-5px); /* Hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 section#products .product img {
-    width: 100px; /* Resize image */
-    height: auto; /* Maintain aspect ratio */
+    width: 100px;
+    height: auto;
     margin-right: 15px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -100,4 +121,9 @@ footer {
     width: 100%;
     bottom: 0;
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
 }
