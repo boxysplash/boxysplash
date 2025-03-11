@@ -1,6 +1,6 @@
 /* General Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -9,31 +9,35 @@ body {
 }
 
 header {
-    background: #00CED1; /* Dark turquoise */
+    background: linear-gradient(135deg, #00CED1, #20B2AA);
     color: white;
-    padding: 20px 10px;
+    padding: 30px 10px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em;
-    animation: slide-in 1s ease-out; /* Slide animation */
+    font-size: 3em;
+    font-weight: bold;
+    animation: slide-in 1s ease-out;
 }
 
 header p {
     margin: 5px 0 0;
-    font-size: 1.2em;
+    font-size: 1.4em;
+    font-style: italic;
 }
 
 @keyframes slide-in {
     from {
-        transform: translateX(-50%);
+        transform: translateY(-50%);
         opacity: 0;
     }
     to {
-        transform: translateX(0);
+        transform: translateY(0);
         opacity: 1;
     }
 }
@@ -42,10 +46,11 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    background: #48D1CC; /* Medium turquoise */
+    background: #48D1CC;
     overflow: hidden;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 nav ul li {
@@ -55,72 +60,90 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 15px 25px;
     display: inline-block;
     transition: all 0.3s ease;
+    font-weight: bold;
 }
 
 nav ul li a:hover {
-    background: #00CED1; /* Dark turquoise for hover effect */
+    background: #00CED1;
     transform: scale(1.1);
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 section {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 900px;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 1000px;
     background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 section h2 {
-    color: #48D1CC; /* Medium turquoise */
-    border-bottom: 2px solid #00CED1; /* Dark turquoise */
-    padding-bottom: 5px;
+    color: #48D1CC;
+    border-bottom: 3px solid #00CED1;
+    padding-bottom: 10px;
+    font-size: 2em;
 }
 
 section#products .product {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
-    border: 1px solid #AFEEEE; /* Light turquoise border */
-    padding: 10px;
-    border-radius: 5px;
-    background: #E0FFFF; /* Light background for each product */
+    margin-bottom: 20px;
+    border: 1px solid #AFEEEE;
+    padding: 15px;
+    border-radius: 8px;
+    background: #E0FFFF;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 section#products .product:hover {
-    transform: translateY(-5px); /* Hover effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
 section#products .product img {
-    width: 100px;
+    width: 120px;
     height: auto;
-    margin-right: 15px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+section#products .product img:hover {
+    transform: scale(1.1);
 }
 
 section#products .product p {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     color: #333;
+    font-weight: 500;
 }
 
 footer {
     text-align: center;
-    background: #00CED1; /* Dark turquoise */
+    background: linear-gradient(135deg, #00CED1, #20B2AA);
     color: white;
-    padding: 10px;
+    padding: 15px;
     position: fixed;
     width: 100%;
     bottom: 0;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 /* Smooth Scrolling */
