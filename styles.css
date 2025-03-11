@@ -1,11 +1,13 @@
 /* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f8fb; /* Light blue background */
+    background: linear-gradient(120deg, #f4f8fb, #e3f2fd); /* Subtle gradient */
 }
 
 header {
@@ -58,28 +60,10 @@ section h2 {
     padding-bottom: 5px;
 }
 
-section#products .product {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    border: 1px solid #e0e7ff; /* Light blue border */
-    padding: 10px;
-    border-radius: 5px;
-    background: #f9fbff; /* Light background for each product */
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-section#products .product:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
 footer {
     text-align: center;
     background: #0033cc;
     color: white;
     padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
