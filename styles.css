@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -44,14 +44,17 @@ nav ul li a {
     transition: color 0.3s;
 }
 
+nav ul li a.active {
+    border-bottom: 2px solid #00d9d9;
+}
+
 nav ul li a:hover {
     color: #00d9d9;
 }
 
 /* Hero Section */
 .hero {
-    background: url('hero-image.jpg') no-repeat center center/cover;
-    height: 90vh;
+    height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,57 +75,76 @@ nav ul li a:hover {
 
 .hero p {
     font-size: 1.2em;
-    margin-bottom: 20px;
 }
 
-.btn {
-    background: #00d9d9;
-    color: #004d4d;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-    transition: all 0.3s ease-in-out;
-}
-
-.btn:hover {
-    background: #004d4d;
-    color: white;
-}
-
-/* Product Section */
-.products {
-    text-align: center;
+/* Sections */
+section {
     padding: 50px 10%;
+    text-align: center;
 }
 
-.product-grid {
+section h2 {
+    color: #004d4d;
+    border-bottom: 2px solid #00d9d9;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Product Grid */
+.products-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .product {
     background: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    text-align: center;
+    transition: transform 0.3s ease;
+    width: 250px;
 }
 
 .product:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px);
 }
 
 .product img {
     max-width: 100%;
-    height: auto;
     border-radius: 5px;
 }
 
-.product h3 {
-    margin-top: 10px;
+/* Contact Form */
+.contact-form {
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    background: #00d9d9;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #009999;
 }
 
 /* Footer */
@@ -131,5 +153,6 @@ footer {
     background: #004d4d;
     color: white;
     padding: 15px;
-    margin-top: 50px;
+    width: 100%;
+    bottom: 0;
 }
