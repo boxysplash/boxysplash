@@ -41,6 +41,18 @@ section {
     margin: 20px;
 }
 
+section#products .product {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    margin-bottom: 15px;
+}
+
+section#products .product img {
+    width: 100px; /* Resize image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Add space between image and text */
+}
+
 footer {
     text-align: center;
     background: #333;
