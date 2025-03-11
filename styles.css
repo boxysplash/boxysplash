@@ -5,11 +5,11 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f8fb; /* Light blue background */
+    background-color: #AFEEEE; /* Light turquoise background */
 }
 
 header {
-    background: #0033cc; /* Deep blue */
+    background: #00CED1; /* Dark turquoise */
     color: white;
     padding: 20px 10px;
     text-align: center;
@@ -42,7 +42,7 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    background: #0056d6; /* Mid blue */
+    background: #48D1CC; /* Medium turquoise */
     overflow: hidden;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -61,7 +61,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: #0033cc; /* Darker blue for hover effect */
+    background: #00CED1; /* Dark turquoise for hover effect */
     transform: scale(1.1);
     border-radius: 5px;
 }
@@ -76,8 +76,8 @@ section {
 }
 
 section h2 {
-    color: #0056d6; /* Mid blue */
-    border-bottom: 2px solid #0033cc; /* Deep blue */
+    color: #48D1CC; /* Medium turquoise */
+    border-bottom: 2px solid #00CED1; /* Dark turquoise */
     padding-bottom: 5px;
 }
 
@@ -85,10 +85,10 @@ section#products .product {
     display: flex;
     align-items: center;
     margin-bottom: 15px;
-    border: 1px solid #e0e7ff; /* Light blue border */
+    border: 1px solid #AFEEEE; /* Light turquoise border */
     padding: 10px;
     border-radius: 5px;
-    background: #f9fbff; /* Light background for each product */
+    background: #E0FFFF; /* Light background for each product */
     transition: all 0.3s ease-in-out;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -114,7 +114,7 @@ section#products .product p {
 
 footer {
     text-align: center;
-    background: #0033cc; /* Deep blue */
+    background: #00CED1; /* Dark turquoise */
     color: white;
     padding: 10px;
     position: fixed;
