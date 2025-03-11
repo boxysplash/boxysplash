@@ -21,6 +21,11 @@ header h1 {
     font-size: 2.5em;
 }
 
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
 nav ul {
     list-style: none;
     margin: 0;
@@ -73,8 +78,8 @@ section#products .product {
 }
 
 section#products .product img {
-    width: 100px;
-    height: auto;
+    width: 100px; /* Resize image */
+    height: auto; /* Maintain aspect ratio */
     margin-right: 15px;
     border-radius: 5px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -86,3 +91,13 @@ section#products .product p {
     color: #333;
 }
 
+footer {
+    text-align: center;
+    background: #0033cc; /* Deep blue */
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
